@@ -10,7 +10,7 @@ function Search() {
           Epicure works with the app<br/>
           chef restaurants in Tel Aviv
         </p>
-        <SearchInput/>
+        <SearchInput title={'home'}/>
       </div>
     </div>
   );

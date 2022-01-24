@@ -1,12 +1,17 @@
 import React from 'react';
 import './SearchInput.scss';
+// import IconButton from "@material-ui/core/IconButton";
+import InputAdornment from "@material-ui/core/InputAdornment";
+import SearchIcon from "@material-ui/icons/Search";
+const search = require("../../../../assets/images/icons/search/search-icon.png");
 
-function SearchInput() {
+const SearchInput:React.FC<{title:string}>=(props)=> {
+  console.log("title ",props.title);
+  
   return (
-    <div className="search-input">
-        <i data-src="/assets/images/icons/search/search-icon.png"></i>
-        <input type="search" placeholder="Search for restaurants, cuisine, chef"/>    
-    </div>
+    <section className='header-box'>
+      <input className='header-input' type="text"/>
+    </section>
   );
 }
 
