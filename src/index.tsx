@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './Components/Restaurant/Restaurant';
+import Epicure from './Epicure/Epicure';
+import './index.scss';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Epicure />, document.getElementById('root'));
 
 
 
