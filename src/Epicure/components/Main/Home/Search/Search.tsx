@@ -6,10 +6,10 @@ function Search() {
   return (
     <div className="search">
       <div className="search-box">
-        <p className="search-text">
-          Epicure works with the app<br/>
+        <div className="search-text Text-Style-7">
+          Epicure works with the top<br/>
           chef restaurants in Tel Aviv
-        </p>
+        </div>
         <SearchInput title={'home'}/>
       </div>
     </div>

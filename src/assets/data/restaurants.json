@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Claro",
+    "chef_id": 1,
+    "dishes_id": [1, 2, 3, 4],
+    "popular": true,
+    "signuture_dish_id": 1,
+    "src": "claro.png"
+  },
+  {
+    "id": 2,
+    "name": "Mashya",
+    "chef_id": 2,
+    "dishes_id": [2, 4, 6, 10],
+    "popular": true,
+    "signuture_dish_id": 2,
+    "src": "Mashya.png"
+  },
+  {
+    "id": 3,
+    "name": "Onza",
+    "chef_id": 3,
+    "dishes_id": [3, 5, 7, 12],
+    "popular": true,
+    "signuture_dish_id": 3,
+    "src": "Onza.png"
+  }
+]

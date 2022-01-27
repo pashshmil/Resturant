@@ -1,0 +1,46 @@
+.card-frame{
+    width: 360px;
+    height: 360px;
+    margin-right: 10px;
+}
+
+.card-img{
+    width: 360px;
+    height: 240px;
+}
+
+.card-text{
+    height: 120px;
+    // padding-top: 5px;
+    background-color: #f9f4ea;
+    text-align: center;
+}
+
+.restaurant-name{
+  width: 109px;
+  height: 47px;
+  margin: 0 20.5px 3.8px;
+  font-family: HelveticaNeue;
+  font-size: 40px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2.67px;
+  text-align: center;
+  color: black;
+}
+.chef-name{
+  width: 150px;
+  height: 29px;
+  margin: 3.8px 0 0;
+  font-family: HelveticaNeue;
+  font-size: 25px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.67px;
+  text-align: center;
+  color: black;
+}

@@ -11,10 +11,16 @@ function Home() {
   return (
     <section>
       <Search/>
-      <Resturants/>
-      <Dishes/>
+      <div className="frame popular-restaurants-frame">
+        <Resturants/>
+      </div>
+      <div className='frame signure-dishes-frame'>
+        <Dishes />
+      </div>
       <Icons/>
-      <ChefOfWeek/>
+      <div className="frame chef-of-week-frame">
+        <ChefOfWeek/>
+      </div>
       <AboutUs/>
      </section>
   );

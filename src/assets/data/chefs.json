@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "name": "Assaf Granit",
+        "chef_id": 1,
+        "description": "chef1 chef1 chef1 chef1 chef1 chef1 chef1",
+        "restaurants_id": [1,2,3,4],
+        "chef of the week":true
+    },
+    {
+        "id": 2,
+        "name": "Moshik Rot",
+        "description": "chef2 chef2 chef2 chef2 chef2 chef2 chef2 chef2",
+        "restaurants_id": [5,6,7,8],
+        "chef of the week":false
+    },
+    {
+        "id": 3,
+        "name": "Eyal Shani",
+        "description": "chef3 chef3 chef3 chef3 chef3 chef3 chef3 chef3",
+        "restaurants_id": [9,10],
+        "chef of the week":false
+    }
+]

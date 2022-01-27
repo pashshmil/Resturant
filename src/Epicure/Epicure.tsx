@@ -1,7 +1,6 @@
 import React from 'react';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
-// import M`ain from './components/Main/Main';
 import { Route,Redirect } from "react-router-dom";
 import './Epicure.scss';
 import Restaurants from './components/Main/Restaurants/Restaurants';
