@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 import './Dishes.scss';
-import restaurantsJson from "../../../../assets/data/restaurants.json";
-import dishesJson from "../../../../assets/data/dishes.json";
-import DishCard from "../../Shared/Cards/DishCrad";
-import Dish from "../../../types/Dish";
+import restaurantsJson from "../../../../../assets/data/restaurants.json";
+import dishesJson from "../../../../../assets/data/dishes.json";
+import DishCard from "../../../Shared/Cards/DishCrad";
+import Dish from "../../../../types/Dish";
 
 function Dishes() {
   const [signtureDish, setSigntureDish] = useState<Dish[]>([]);
-  // name: string; price:number; src: string; type:string; description:string
   useEffect(() => {
     const restaurants = restaurantsJson.filter((item) => {
       return item.popular === true;
@@ -21,7 +20,6 @@ function Dishes() {
       }
     });
     setSigntureDish(arr);
-    console.log("dishes ",signtureDish);
   }, []);
   return (
   <section>

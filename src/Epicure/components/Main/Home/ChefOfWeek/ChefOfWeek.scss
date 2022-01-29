@@ -1,0 +1,95 @@
+.chef-of-week{
+    // text-align: left;
+}
+
+.chef-title{
+    width: 320px;
+    height: 35px;
+    margin: 100px 31px 37px 31px;
+    font-family: HelveticaNeue;
+    font-size: 30px;
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-align: center;
+    color: black;
+}
+
+.chef-info{
+    display: flex;
+    margin-top: 37px;
+}
+
+.chef-description{
+    height: 292px;
+    margin: 0px 180px 110px 69px;
+    font-family: HelveticaNeue;
+    font-size: 25px;
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 1.08px;
+    text-align: justify;
+    color: black;
+}
+
+.chef-res-name{
+  width: 273px;
+  height: 30px;
+  margin-top: 59px; 
+  margin-bottom: 23px;
+  font-family: HelveticaNeue;
+  font-size: 30px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 1.29px;
+  color: black;
+}
+
+.chef-img{
+    width:430px;
+    height: 330px;
+}
+
+.card-res-chef{
+    display: flex;
+    margin-top:23px;
+}
+
+.card-res-chef-frame{
+    width: 231px;   
+    margin-right: 15px;
+}
+
+.card-res-chef-img{
+    height: 224px;
+    width: 231px;
+    object-fit: cover;
+}
+
+.card-res-chef-text{
+  width: 231px;
+  height: 120px;
+  background-color: #f9f4ea;
+  display: flex;
+}
+
+.name-label{
+  margin:auto;
+  width: 78px;
+  height: 35px;
+  font-family: HelveticaNeue;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  color: black;
+}

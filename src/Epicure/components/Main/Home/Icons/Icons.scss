@@ -1,4 +1,32 @@
-.icons{
-    border: 1px solid yellow;
-    height: 265px;
+.icons {
+  height: 265px;
+  text-align: center;
+  margin-top: 35px;
+  background-color: #fafafa;
+}
+
+.THE-MEANING-OF-OUR-I{
+width: 472px;
+  height: 35px;
+  margin: 0 0 24px;
+  font-family: HelveticaNeue;
+  font-size: 30px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2.14px;
+  text-align: center;
+  color: black;
+}
+
+.icons-frame{
+    margin-top:20px;
+    // display: flex;
+}
+
+.type-icon {
+  height: 60px;
+  width: 60px;
+  margin: 50px;
 }

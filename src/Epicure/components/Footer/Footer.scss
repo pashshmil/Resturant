@@ -1,4 +1,22 @@
 .footer{
-    border: 1px solid green;
     height: 94px;
+    display: flex;
+    margin-left: 500px;
+    margin-right: 500px;
 }
+
+.info{
+    width: 150px;
+    height: 21px;
+    margin-top:37px;
+    font-family: HelveticaNeue;
+    font-size: 18px;
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.13px;
+    color: black;
+    margin: auto;
+}
+

@@ -3,7 +3,7 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import { Route,Redirect } from "react-router-dom";
 import './Epicure.scss';
-import Restaurants from './components/Main/Restaurants/Restaurants';
+import Restaurants from './components/Main/Home/Popular-Restaurants/Popular-Restaurants';
 import Chefs from './components/Main/Chefs/Chefs';
 import Home from './components/Main/Home/Home';
 

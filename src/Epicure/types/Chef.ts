@@ -1,10 +1,10 @@
 interface Chef {
-    "id": number,
-    "name": string,
-    "chef_id": number,
-    "description": string,
-    "restaurants_id": [],
-    "chef of the week":boolean
+  id: number;
+  name: string;
+  description: string;
+  restaurants_id: [];
+  chefOfWeek: boolean;
+  src: string;
 }
 
 export default Chef;

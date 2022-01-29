@@ -1,6 +1,6 @@
 import React from 'react';
-import Dishes from '../Dishes/Dishes';
-import Resturants from '../Restaurants/Restaurants';
+import Dishes from './Dishes/Dishes';
+import PopularResturants from './Popular-Restaurants/Popular-Restaurants';
 import AboutUs from './About_us/AboutUs';
 import ChefOfWeek from './ChefOfWeek/ChefOfWeek';
 import './Home.scss';
@@ -12,13 +12,13 @@ function Home() {
     <section>
       <Search/>
       <div className="frame popular-restaurants-frame">
-        <Resturants/>
+        <PopularResturants/>
       </div>
       <div className='frame signure-dishes-frame'>
         <Dishes />
       </div>
       <Icons/>
-      <div className="frame chef-of-week-frame">
+      <div className="chef-of-week-frame">
         <ChefOfWeek/>
       </div>
       <AboutUs/>

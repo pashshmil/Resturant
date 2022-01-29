@@ -1,4 +1,95 @@
-.about-us{
-    border: 1px solid blue;
-    height: 526px;
+.about-us {
+  height: 526px;
+  background-color: #fafafa;
+  margin-left: 169px;
+}
+
+.about-us-label {
+  width: 178px;
+  height: 35px;
+  margin-top: 65px;
+  font-family: HelveticaNeue;
+  font-size: 30px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.89px;
+  text-align: center;
+  color: black;
+}
+
+.about-us-text {
+  height: 269px;
+  width: 567px;
+  font-family: HelveticaNeue;
+  font-size: 22px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.69px;
+  text-align: justify;
+  color: black;
+}
+
+.about-us-inner {
+  display: flex;
+}
+
+.about-us-img {
+  width: 178px;
+  height: 166px;
+  object-fit: cover;
+  margin: auto;
+}
+
+.icons-frame {
+  margin-top: 23px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.apple-frame {
+  width: 180px;
+  height: 52.8px;
+  padding: 8px;
+  border-radius: 9.6px;
+  border: solid 0.6px black;
+  float: left;
+  text-align: center;
+  display: flex;
+}
+
+.android-frame {
+  width: 180px;
+  height: 52.8px;
+  padding: 8px;
+  border-radius: 9.6px;
+  border: solid 0.6px black;
+  margin-left: 15px;
+  float: left;
+  display: flex;
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+  margin-top: 10px;
+}
+
+.Download-on-the-App {
+  width: 120px;
+  height: 36px;
+  font-family: HelveticaNeue;
+  font-size: 13.2px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.29px;
+  text-align: center;
+  color: black;
+  margin-left: 10px;
+  margin-top:10px;
 }
