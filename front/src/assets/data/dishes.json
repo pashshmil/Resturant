@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Pasta",
+        "restaurant_id": 1,
+        "description": "dish 1 dish 1 dish 1 dish 1 dish 1 dish 1 dish 1 dish 1",
+        "price": 70,
+        "type": "vegan",
+        "src": "rectangle.png"
+    },
+    {
+        "id": 2,
+        "name": "Pizza",
+        "restaurant_id": 1,
+        "description": "dish 2 dish 2 dish 2 dish 2 dish 2 dish 2 dish 2 dish 2",
+        "price": 80,
+        "type": "vegetarian",
+        "src": "rectangle.png"
+    },
+    {
+        "id": 3,
+        "name": "Steak",
+        "restaurant_id": 1,
+        "description": "dish 3 dish 3 dish 3 dish 3 dish 3 dish 3 dish 3 dish 3",
+        "price": 80,
+        "type": "",
+        "src": "rectangle.png"
+    },  {
+        "id": 4,
+        "name": "Hamburger",
+        "restaurant_id": 1,
+        "description": "dish 4 dish 4 dish 4 dish 4 dish 4 dish 4 dish 4 dish 4",
+        "price": 85,
+        "type": "",
+        "src": "rectangle.png"
+    }
+]

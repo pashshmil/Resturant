@@ -1,0 +1,76 @@
+.main-dish-modal{
+    overflow: scroll;
+    background-color: white;
+}
+
+.dish-modal-img{
+    width: 608px;
+    height: 240px;
+    object-fit: cover;
+}
+
+.close-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.dish-modal-text{
+    width: 206px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+}
+
+.dish-modal-name{
+    width: 206px;
+    height: 40px;
+    margin: 0 27.2px 14px 17px;
+    font-family: HelveticaNeue;
+    font-size: 35px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 2.33px;
+    text-align: center;
+    color: black;
+    background-color: white;
+}
+
+
+
+.dish-modal-description{
+    width: 233.2px;
+    height: 51px;
+    margin: 14px 0 30px 17px;
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.93px;
+    text-align: center;
+    color: black;
+    background-color: white;
+}
+
+.modal-add-btn{
+    color: white;
+    background-color: black;
+    height: 34px;
+    width: 100px;
+}
+
+.dish-modal-price{
+    background-color: white;
+}
+
+.ReactModal__Content--after-open{
+    width: 608px;
+    height: 1000px;
+    overflow-y: scroll;
+    margin: auto;
+    background-color: white;
+}

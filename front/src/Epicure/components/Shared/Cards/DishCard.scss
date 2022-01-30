@@ -1,0 +1,142 @@
+.dish-card-frame {
+  width: 360px;
+  height: 800px;
+  margin-right: 10px;
+  background-color: white;
+}
+
+.dish-card-img {
+  width: 360px;
+  height: 254px;
+  object-fit: cover;
+}
+
+.dish-card-text {
+  background-color: #f9f4ea;
+  text-align: center;
+  height: 400px;
+}
+
+.dish-name {
+  width: 109px;
+  height: 47px;
+  margin: 0 20.5px 3.8px;
+  font-family: HelveticaNeue;
+  font-size: 40px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2.67px;
+  text-align: center;
+  color: black;
+}
+
+.dish-description {
+  margin: 3.8px 0 0;
+  font-family: HelveticaNeue;
+  font-size: 25px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.67px;
+  text-align: center;
+  height: 220px;
+  color: black;
+}
+
+.dish-icon {
+  height: 30px;
+  width: 30px;
+  margin-top: 20px;
+  object-fit: cover;
+}
+
+.dish-price {
+  height: 40px;
+  margin-top: 15px;
+  display: flex;
+}
+
+hr {
+  width: 100px;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+}
+
+.dish-modal-img {
+  height: 292px;
+  width: 608;
+  object-fit: cover;
+}
+
+.close-btn {
+  // height: 100px;
+  // width: 100px;
+}
+
+.dish-modal {
+  width: 608px;
+  height: 1081px;
+  //margin: 9px 18px 61px 4px;
+  padding: 0px 0px 0px 0px !important;
+  //   background-color: white;
+  // opacity: 0.5;
+  margin: auto;
+}
+
+// .ReactModal__Content--after-open {
+//   // border: 1px solid red !important;
+//   width: 608px;
+//   margin: auto;
+//   height: 1081px;
+//   overflow-y: scroll;
+// }
+
+.modal-close {
+  cursor: pointer;
+}
+
+.modal-header {
+  // opacity: 0.5 !important;
+  // background-color: green;
+  // height: 100px;
+//   opacity: 0.5;
+  
+}
+
+.check{
+    border: 1px solid red;
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+.modal-main {
+    position:fixed;
+    background: white;
+    width: 80%;
+    height: auto;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .display-block {
+    display: block;
+  }
+  
+  .display-none {
+    display: none;
+  }

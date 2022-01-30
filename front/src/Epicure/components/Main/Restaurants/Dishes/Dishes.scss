@@ -1,0 +1,48 @@
+.all-dishes{
+    margin-top: 27px;
+    display: flex;
+    color: black;
+}
+
+.restaurant-title{
+    width: 149px;
+    height: 64px;
+    margin: 0 15.5px;
+    font-family: HelveticaNeue;
+    font-size: 55px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 3.67px;
+    text-align: center;
+    color: black;
+}
+
+.restaurant-chef{
+    width: 180px;
+  height: 35px;
+  margin-top: 20px;
+  font-family: HelveticaNeue;
+  font-size: 30px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  color: black;
+}
+
+.title-img{
+    width: 1102px;
+    height: 395px;
+    margin: 8.8px 169px 27.2px;
+    object-fit: contain;
+    border: solid 1px #979797;
+}
+
+.header-dishes{
+    width: 100%;    
+    text-align: center;
+}
