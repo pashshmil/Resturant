@@ -1,0 +1,39 @@
+GET http://localhost:3005/restaurants
+
+
+####
+
+GET http://localhost:3005/restaurants/2
+
+###
+
+# POST http://localhost:3005/restaurants
+# Content-Type: application/json
+
+# {
+#     "id":11,
+#     "name":"check", 
+#     "chef_id":1,
+#     "dishes_id":[1,2,3],
+#     "popular":true,
+#     "signuture_dish_id":2,
+#     "src": "Mashya.png"
+# }
+
+###
+
+GET http://localhost:3005/dishes
+
+
+####
+
+GET http://localhost:3005/restaurants/2
+
+###
+
+GET http://localhost:3005/restaurants
+
+
+####
+
+GET http://localhost:3005/restaurants/2
