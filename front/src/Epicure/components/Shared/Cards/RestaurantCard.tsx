@@ -4,9 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const RestaurantCard: React.FC<{ name: string; chef: string; src: string,id:number }> = (
   props
-) => {
-
- 
+) => { 
   return (
     <section>
       <NavLink to={`restaurants/${props.id}`} className="card-frame">

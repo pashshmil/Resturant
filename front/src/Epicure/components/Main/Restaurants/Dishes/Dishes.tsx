@@ -1,25 +1,30 @@
 import React, { useState,useEffect } from "react";
 import './Dishes.scss';
 import { useParams } from "react-router-dom";
-import restaurantsJson from "../../../../../assets/data/restaurants.json";
-import dishesJson from "../../../../../assets/data/dishes.json";
+import {useSelector} from 'react-redux'
 import Dish from "../../../../types/Dish";
 import Restaurant from "../../../../types/Restaurant";
 import DishCard from "../../../Shared/Cards/DishCrad";
 
 function Dishes() {
-  
+const resData=useSelector((state:any) => state.restaurants.restaurants);  
+const dishesData=useSelector((state:any) => state.dishes.dishes);  
 const params=useParams<any>();
 const [dishes, setDishes] = useState<Dish[]>([]);
 const [restaurant, setRestaurant] = useState<Restaurant|any>();
 
 
 useEffect(() => {
-    for(let item of restaurantsJson){
-        if(item.id==params?.restaurantId){
+// console.log("res ",resData);
+// console.log("dishes ",dishesData);
+    
+// const resID=resData?.filter((item:any)=>{return item._id=params?.restaurantId});
+// console.log("check ",resID);
+    for(let item of resData){
+        if(item._id==params?.restaurantId){
             setRestaurant(item);
             for(let ind of item.dishes_id){
-                for(let dish of dishesJson){
+                for(let dish of dishesData){
                     if(ind==dish.id){
                         setDishes((currentArray:any) => [...currentArray, dish])
                     }

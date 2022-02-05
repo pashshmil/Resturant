@@ -7,19 +7,9 @@ const DishCard:React.FC<{name: string; price:number; src: string; type:string; d
   const path='./../images/icons/dishes-types/'+ props.type +'.png'
   const [modalIsOpen,setModalIsOpen] = useState(false);
 
-  const handleAfterOpen =()=>{
-      setModalIsOpen(true)
+  function toggleModal() {
+    setModalIsOpen(!modalIsOpen );
   }
-
-  const handleCloseModal =()=>{
-      setModalIsOpen(false)
-      console.log("close ",modalIsOpen);
-  }
-
-    function toggleModal() {
-      console.log("close2");
-      setModalIsOpen(!modalIsOpen );
-    }
 
   return (
     <div  className="dish-card-frame" >

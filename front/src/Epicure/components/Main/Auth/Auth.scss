@@ -1,0 +1,37 @@
+@import "../../../styles/shared.scss";
+
+.login-form{
+    text-align: center;
+    background-color: #f9f4ea;
+    width: 50%;
+    margin: auto;
+    height: auto;
+    border-radius: 5px;
+    padding-bottom: 50px;
+    margin-top: 100px;
+}
+
+.invalid input{
+    background-color: lightcoral;
+    border: 1px solid red;
+}
+
+.btn{
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 35px;
+    width: 70px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+}
+
+.submit-btn:disabled{
+    background-color: lightgray;
+    cursor: not-allowed;
+}
+
+.not-valid{
+    color:red;
+    font-style: italic;
+}

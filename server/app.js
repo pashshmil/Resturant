@@ -1,7 +1,15 @@
+require('dotenv').config()
 const express= require('express');
+const cors= require('cors');
 const app=express();
 const mongoose=require('mongoose');
-require('dotenv').config();
+app.use(express.json());
+app.use(
+    cors({
+        origin:"http://localhost:3000",
+            credentials:true,   
+    })
+)
 
 const connectDB= async()=>{
     try{
@@ -22,12 +30,16 @@ app.use('/dishes',dishesRoute );
 
 const chefsRoute=require('./routes/chefs')
 app.use('/chefs',chefsRoute );
-// const db=mongoose.connection
-// db.on('error',(error)=>console.error("error"))
+
+const userRoute=require('./routes/user');
+app.use('/auth',userRoute );
+
 mongoose.connection.once('open',()=>{
     console.log("connect to DB ");
     app.listen(3005,()=>{
         console.log("listen to 3005");
     })
 });
+
+
 

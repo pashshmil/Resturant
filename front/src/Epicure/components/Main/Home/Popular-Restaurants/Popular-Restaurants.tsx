@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
 import "./Popular-Restaurants.scss";
-import restaurantsJson from "../../../../../assets/data/restaurants.json";
-import chefsJson from "../../../../../assets/data/chefs.json";
 import RestaurantCard from "../../../Shared/Cards/RestaurantCard";
 import { NavLink } from "react-router-dom";
-
+import {useSelector} from 'react-redux'
 function Resturants() {
   const [popularRestaurants, setpopularRestaurants] = useState<{ name: string, chef: string,src:string,id:number }[]>([]);
+  const chefs=useSelector((state:any) => state.chefs.chefs);
+  const res=useSelector((state:any) => state.restaurants.restaurants);
   useEffect(() => {
-    const restaurants = restaurantsJson.filter((item) => {
+    const restaurants = res.filter((item:any) => {
       return item.popular === true;
     });
-    restaurants.map((item) => {
-      for (let chef of chefsJson) {
+    restaurants.map((item:any) => {
+      for (let chef of chefs) {
         if (chef.id === item.chef_id) {
           setpopularRestaurants((currentArray:any) => [...currentArray, { id:item.id,name: item.name, chef: chef.name,src:item.src }])
         }
@@ -25,7 +25,7 @@ function Resturants() {
       <span className="title Text-Style-9">
         THE POPULAR RESTAURANTS IN EPICURE:
       </span>
-      <div className="cards">
+      <div className="popular-cards">
         {popularRestaurants.length > 0 &&
           popularRestaurants.map((item, index) => {
             return (

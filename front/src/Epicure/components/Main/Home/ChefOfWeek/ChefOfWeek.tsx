@@ -1,18 +1,19 @@
 import React, { useEffect, useState } from "react";
 import "./ChefOfWeek.scss";
-import restaurantsJson from "../../../../../assets/data/restaurants.json";
-import chefsJson from "../../../../../assets/data/chefs.json";
 import Chef from "../../../../types/Chef";
+import {useSelector} from 'react-redux'
 //./src/Epicure/components/Main/Home/ChefOfWeek
 function ChefOfWeek() {
   const [chefOfWeek, setChefOfWeek] = useState<any>();
   const [chefsRestaurants, setChefsRestaurants] = useState<any>([]);
+  const chefs=useSelector((state:any) => state.chefs.chefs);
+  const res=useSelector((state:any) => state.restaurants.restaurants);
   useEffect(() => {
-    const chef_of_week= chefsJson.filter((item) => {
+    const chef_of_week= chefs.filter((item:any) => {
       return item.chefOfWeek === true;
     });
     setChefOfWeek(chef_of_week[0]);
-    for (let item of restaurantsJson) {
+    for (let item of res) {
       if (chef_of_week[0].restaurants_id.includes(item.chef_id)) {
         setChefsRestaurants((currentArray:any) => [...currentArray, item])
       }

@@ -8,7 +8,6 @@ const DishModal:React.FC<{onCloseModal:(()=>void) ,IsModalOpened:boolean,type:st
   function onModalClose() {
     // let data = { name: 'example', type: 'closed from child' };
     props.onCloseModal();
-    console.log("close1");
   }
   return (
     <div>

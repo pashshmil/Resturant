@@ -1,18 +1,19 @@
 import React, { useEffect, useState } from "react";
 import './SigntureDishes.scss';
-import restaurantsJson from "../../../../../assets/data/restaurants.json";
-import dishesJson from "../../../../../assets/data/dishes.json";
 import DishCard from "../../../Shared/Cards/DishCrad";
 import Dish from "../../../../types/Dish";
+import {useSelector} from 'react-redux'
 
 function Dishes() {
   const [signtureDish, setSigntureDish] = useState<Dish[]>([]);
+  const dishesData=useSelector((state:any) => state.dishes.dishes);  
+  const res=useSelector((state:any) => state.restaurants.restaurants);
   useEffect(() => {
-    const restaurants = restaurantsJson.filter((item) => {
+    const restaurants = res.filter((item:any) => {
       return item.popular === true;
     });
-    restaurants.map((item) => {
-      for (let dish of dishesJson) {
+    restaurants.map((item:any) => {
+      for (let dish of dishesData) {
         if (dish.id === item.signuture_dish_id) {
           setSigntureDish((currentArray:any) => [...currentArray, { dish }])
         }
@@ -28,8 +29,8 @@ function Dishes() {
       {signtureDish.length > 0 &&
         signtureDish.map((item, index) => {
           return (
-            <section key={item.id}>
-            <DishCard  name={item.name} description={item.description} src={item.src} price={item.price} type={item.type}/>
+            <section key={index}>
+              <DishCard  name={item.name} description={item.description} src={item.src} price={item.price} type={item.type}/>
             </section>
           );
         })}

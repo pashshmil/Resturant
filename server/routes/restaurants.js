@@ -4,6 +4,6 @@ const controller=require('../controllers/restaurantsController');
 
 router.get('/',controller.get);
 router.get('/:id',controller.getById);
-// router.post('/',controller.post);
+router.post('/',controller.post);
 
 module.exports=router;

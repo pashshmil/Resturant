@@ -1,20 +1,14 @@
-import {createSlice,configureStore} from '@reduxjs/toolkit'
-
-const initRestaurants={}
-
-const restaurantsSlice=createSlice({
-    name: 'restaurants',
-    initialState: initRestaurants,
-    reducers: {
-        
-    }
-});
+import {configureStore} from '@reduxjs/toolkit'
+import restaurantsReducer from './restaurants-slice'
+import authReducer from './auth-slice'
+import notificationReducer from './notification-slice'
+import chefsReducer from './chefs-slice'
+import dishesReducer from './dishes-slice'
 
 const store=configureStore({
-    reducer: restaurantsSlice.reducer
+    reducer: {auth: authReducer, restaurants: restaurantsReducer, notification: notificationReducer,dishes:dishesReducer,chefs: chefsReducer},
 });
 
-export const restaurantsActions= restaurantsSlice.actions
 export default store;
 
 
