@@ -1,20 +1,21 @@
 .dish-card-frame {
-  width: 360px;
-  height: 800px;
-  margin-right: 10px;
+  width: 236px;
+  height: 413px;
+  // margin-right: 10px;
   background-color: white;
+  margin: auto;
 }
 
 .dish-card-img {
-  width: 360px;
-  height: 254px;
+  width: 236px;
+  height: 170px;
   object-fit: cover;
 }
 
 .dish-card-text {
   background-color: #f9f4ea;
   text-align: center;
-  height: 400px;
+  height: 300px;
 }
 
 .dish-name {
@@ -22,7 +23,7 @@
   height: 47px;
   margin: 0 20.5px 3.8px;
   font-family: HelveticaNeue;
-  font-size: 40px;
+  font-size: 25px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -35,15 +36,15 @@
 .dish-description {
   margin: 3.8px 0 0;
   font-family: HelveticaNeue;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 100;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: 1.67px;
   text-align: center;
-  height: 220px;
   color: black;
+  height: 140px;
 }
 
 .dish-icon {
@@ -55,8 +56,8 @@
 
 .dish-price {
   height: 40px;
-  margin-top: 15px;
   display: flex;
+  margin-bottom: 15px;
 }
 
 hr {
@@ -82,14 +83,6 @@ hr {
   margin: auto;
 }
 
-// .ReactModal__Content--after-open {
-//   // border: 1px solid red !important;
-//   width: 608px;
-//   margin: auto;
-//   height: 1081px;
-//   overflow-y: scroll;
-// }
-
 .modal-close {
   cursor: pointer;
 }
@@ -98,40 +91,32 @@ hr {
   // opacity: 0.5 !important;
   // background-color: green;
   // height: 100px;
-//   opacity: 0.5;
-  
-}
-
-.check{
-    border: 1px solid red;
-    height: 100px;
-    width: 100px;
-    position: relative;
+  //   opacity: 0.5;
 }
 
 .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width:100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
 
 .modal-main {
-    position:fixed;
-    background: white;
-    width: 80%;
-    height: auto;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-  }
-  
-  .display-block {
-    display: block;
-  }
-  
-  .display-none {
-    display: none;
-  }
+  position: fixed;
+  background: white;
+  width: 80%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}

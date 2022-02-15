@@ -1,19 +1,23 @@
-.cards{
-    display: inline-block;
-    width: 1200px;
+.cards {
+  width: 1200px;
+  height: 800px;
+  margin-right: 50px;
+  overflow-y: scroll;
+  margin: auto;
 }
 
-.res-btn{
-    display: block;
-    margin: auto;
-    background-color: black;
-    color:white;
-    height: 50px;
-    width: 130px;
-    font-family: HelveticaNeue;
-    font-size: 15px;
-    font-weight: 100;
-    font-stretch: normal;
-    font-style: normal;
-    font-weight: bold;
+.res-btn {
+  display: block;
+  margin: auto;
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 130px;
+  font-family: HelveticaNeue;
+  font-size: 15px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 15px;
 }

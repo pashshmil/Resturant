@@ -10,7 +10,7 @@ if(props.status==='success'){
     classes='success';
 }
 
-const updateClasse='basic '+classes
+const updateClasse='basic '+classes;
 
 return (
     <section className={updateClasse}>

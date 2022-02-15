@@ -13,13 +13,14 @@ function ChefOfWeek() {
       return item.chefOfWeek === true;
     });
     setChefOfWeek(chef_of_week[0]);
-    for (let item of res) {
-      if (chef_of_week[0].restaurants_id.includes(item.chef_id)) {
-        setChefsRestaurants((currentArray:any) => [...currentArray, item])
+    if(chefs.length>0 && res.length>0){
+      for (let item of res) {
+        if (chef_of_week[0].restaurants_id.includes(item.chef_id)) {          
+          setChefsRestaurants((currentArray:any) => [...currentArray, item])
+        }
       }
     }
-    
-  }, []);
+  }, [chefs,res]);
 
   return (
     <div className="chef-of-week">

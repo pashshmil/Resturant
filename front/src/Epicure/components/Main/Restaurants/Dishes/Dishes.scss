@@ -1,7 +1,29 @@
+@import "../../../../styles/fonts.scss";
+
 .all-dishes{
-    margin-top: 27px;
     display: flex;
     color: black;
+    width: 1102px;
+    margin: auto;
+}
+
+.menu{
+    width: 25%;
+    margin: auto;
+    display: flex;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.btn-menu{
+    border: none;
+    background-color: inherit;
+    margin: auto;
+    font-size: 25.5px;
+}
+
+.btn-menu:target{
+    text-decoration: underline;
 }
 
 .restaurant-title{

@@ -20,7 +20,7 @@ const DishModal:React.FC<{onCloseModal:(()=>void) ,IsModalOpened:boolean,type:st
           <span className="dish-modal-name">{props.name}</span><br/>
           <div className="dish-modal-description">{props.description}</div><br/>
           <div className="dish-modal-price"><hr/>&#8362;{props.price}<hr/></div>
-          <div>
+          <div className="gender">
             <input type="radio" value="Male" name="gender" /> Whire Bread<br/>
             <input type="radio" value="Female" name="gender" /> Sticky bread
           </div>

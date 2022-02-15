@@ -13,14 +13,14 @@
 }
 
 .dish-modal-text{
-    width: 206px;
+    width: 280px;
     margin: auto;
     text-align: center;
     background-color: white;
 }
 
 .dish-modal-name{
-    width: 206px;
+    width: 230px;
     height: 40px;
     margin: 0 27.2px 14px 17px;
     font-family: HelveticaNeue;
@@ -35,12 +35,14 @@
     background-color: white;
 }
 
-
+.gender{
+    margin-top: 10px;
+}
 
 .dish-modal-description{
     width: 233.2px;
     height: 51px;
-    margin: 14px 0 30px 17px;
+    // margin: 14px 0 30px 17px;
     font-family: HelveticaNeue;
     font-size: 14px;
     font-weight: 100;
@@ -51,6 +53,7 @@
     text-align: center;
     color: black;
     background-color: white;
+    margin-top: 10px;
 }
 
 .modal-add-btn{
@@ -58,16 +61,17 @@
     background-color: black;
     height: 34px;
     width: 100px;
+    margin-top: 10px;
 }
 
 .dish-modal-price{
     background-color: white;
 }
 
-// .ReactModal__Content--after-open{
-//     width: 608px;
-//     height: 1000px;
-//     overflow-y: scroll;
-//     margin: auto;
-//     background-color: white;
-// }
+.ReactModal__Content--after-open{
+    width: 608px !important;
+    height: 1000px !important;
+    overflow-y: scroll !important;
+    margin: auto !important;
+    background-color: transparent !important;
+}

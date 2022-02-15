@@ -14,7 +14,7 @@ const chefSchema = new mongoose.Schema({
         required: true
     },
     restaurants_id:{
-        type: Number,
+        type: [],
         required: true,
     },
     chefOfWeek: {

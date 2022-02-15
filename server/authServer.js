@@ -12,8 +12,7 @@ app.use(
     })
 )
 let tokens=[];
-app.post('/token ',(request, response) => {
-    console.log("check");
+app.post('/token',(request, response) => {
     const refreshToken=request.body.token;
     if(refreshToken==null) return response.sendStatus(401);
     if(!tokens.includes(refreshToken)) return response.sendStatus(403);
@@ -40,7 +39,7 @@ app.post('/login',(request, response) => {
 });
 
 function generateAccessToken(user){
-    return jwt.sign(user,process.env.ACCESS_TOKEN_SECRET,{expiresIn: '35s'});
+    return jwt.sign(user,process.env.ACCESS_TOKEN_SECRET,{expiresIn: '45s'});
 }
 
 

@@ -5,6 +5,9 @@
     border: none;
     cursor: pointer;
     font-size: 20px;
+    // width: 100%;
+    // text-align: left;
+    // opacity: 1;
 }
 
 .input{
@@ -34,4 +37,8 @@
     margin: auto;
     margin-top: 60px;
     background-color: #f9f4ea;
+}
+
+.btn:disabled{
+    background-color: grey;
 }

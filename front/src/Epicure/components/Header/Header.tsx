@@ -28,7 +28,7 @@ function Header() {
                 <NavLink className="a-menu Text-Style-2 " to="/restaurants">
                     Restaurants
                 </NavLink>
-                <NavLink className="a-menu Text-Style-2 a-menu" to="/chefs">
+                <NavLink className="a-menu Text-Style-2" to="/chefs">
                     Chefs
                 </NavLink>
                 <SearchInput title={'header'}/>

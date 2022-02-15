@@ -9,12 +9,13 @@ function Dishes() {
   const dishesData=useSelector((state:any) => state.dishes.dishes);  
   const res=useSelector((state:any) => state.restaurants.restaurants);
   useEffect(() => {
-    const restaurants = res.filter((item:any) => {
+    const restaurant = res.filter((item:any) => {
       return item.popular === true;
     });
-    restaurants.map((item:any) => {
+    res.map((item:any) => {
       for (let dish of dishesData) {
         if (dish.id === item.signuture_dish_id) {
+          console.log("dish check ",dish);
           setSigntureDish((currentArray:any) => [...currentArray, { dish }])
         }
       }

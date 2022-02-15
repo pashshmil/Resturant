@@ -30,7 +30,6 @@ module.exports={
             });
         try{
             const newRes= await restaurant.save();
-            console.log("res mode ",newRes);
             response.status(201).json(newRes);
         }catch(err){
             response.status(400).json({message:err.message})

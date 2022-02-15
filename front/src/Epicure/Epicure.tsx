@@ -13,14 +13,14 @@ import Auth from './components/Main/Auth/Auth';
 import { getChefsData } from './store/chefs.actions';
 import { getDishesData } from './store/dishes.actions';
 import { getRestaurantsData } from './store/restuarants.actions';
+import SignUp from './components/Main/Auth/SignUp/SignUp';
 
 let isInitial=true;
 function Epicure() {
   const auth=useSelector((state:any) => state.auth.isAuth);
-  const restaurant=useSelector((state:any)=> state.restaurants.restaurant);
   const notification=useSelector((state:any)=> state.notification.notification );
   const dispatch=useDispatch();
-  
+  // console.log("not ",notification);
   //get restaurants
   useEffect(()=>{
     dispatch(getRestaurantsData());
@@ -35,15 +35,6 @@ function Epicure() {
   useEffect(()=>{
     dispatch(getDishesData());
   },[dispatch])
-  //post restaurnats
-  // useEffect(()=>{    
-  //   if(isInitial){
-  //     isInitial=false;
-  //     return;
-  //   }
-  //   dispatch(postRestaurantsData(restaurant));
-  // },[restaurant,dispatch])
-
   
   return (
     <div className="Epicure">
@@ -51,14 +42,15 @@ function Epicure() {
       <main>
         {notification && <Notification status={notification.status} title={notification.title} message={notification.message}/>}
         <Switch>
-          <Route path="/" exact><Redirect to="/auth"/></Route>
-          <Route path="/auth"><Auth/></Route>
+          <Route path="/" exact><Redirect to="/login"/></Route>
+          <Route path="/login"><Auth/></Route>
+          <Route path="/sign-up"><SignUp/></Route>
           {auth &&<Fragment><Route path="/home"><Home/></Route>
           <Route path="/restaurants" exact><Restaurants/></Route>
           {/* <Route path="/add-restaurant"><AddRestaurant/></Route> */}
           <Route path="/restaurants/:restaurantId"><Dishes/></Route>
           <Route path="/chefs"><Chefs/></Route></Fragment>}
-          <Route path="/*" exact><Redirect to="/auth"/></Route>
+          <Route path="/*" exact><Redirect to="/login"/></Route>
         </Switch>
       </main>
       <Footer/>

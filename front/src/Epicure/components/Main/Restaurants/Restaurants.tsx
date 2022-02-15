@@ -26,7 +26,7 @@ function Restaurants() {
 
   return (
   <section>
-    <button className="res-btn" onClick={toggleModal}>Add Restaurant</button>
+    <button className="res-btn" onClick={toggleModal}>Add Restaurant</button><br/>
     <div className="cards">
       {restaurants.length > 0 &&
         restaurants.map((item, index) => {

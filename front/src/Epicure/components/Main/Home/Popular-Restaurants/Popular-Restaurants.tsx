@@ -14,11 +14,11 @@ function Resturants() {
     restaurants.map((item:any) => {
       for (let chef of chefs) {
         if (chef.id === item.chef_id) {
-          setpopularRestaurants((currentArray:any) => [...currentArray, { id:item.id,name: item.name, chef: chef.name,src:item.src }])
+          setpopularRestaurants((currentArray:any) => [...currentArray, { id:item._id,name: item.name, chef: chef.name,src:item.src }])
         }
       }
     });
-  }, []);
+  }, [res,chefs]);
 
   return (
     <section>

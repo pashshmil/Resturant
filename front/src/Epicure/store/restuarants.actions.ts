@@ -57,13 +57,6 @@ export const postRestaurantsData=(restaurant:any)=>{
         }
     } 
 }
-
-      //     {"name":restaurant.name, 
-                // "chef_id":restaurant.chef_id,
-                // "popular":restaurant.popular,
-                // "signuture_dish_id":restaurant.signuture_dish_id,
-                // "dishes_id":restaurant.dishes_id,
-                // "src": restaurant.src}
           
         
     
